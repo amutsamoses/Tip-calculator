@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/styles.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h1>SPLI</h1>
+      <h1>TTER</h1>
+    </div>
+    <main class="flex">
+      <section id="calculator" class="flex">
+        <div class="bills-container calc">
+          <div class="bill-label-box">
+            <label for="bill-input">Bill</label>
+          </div>
+          <div class="input-wrapper flex">
+            <input type="number" id="bill-input" class="input-value font-value">
+          </div>
+        </div>
+    
+        <div id="select-tips" class="calc">
+          <label>Select Tip %</label>
+          <div class="tips">
+            <button id="btn-tip" class="tip font-value">5%</button>
+            <button id="btn-tip" class="tip font-value">10%</button>
+            <button id="btn-tip" class="tip font-value">15%</button>
+            <button id="btn-tip" class="tip font-value">25%</button>
+            <button id="btn-tip" class="tip font-value">50%</button>
+            <button id="btn-tip">
+              <input type="number" id="custome" class="font-value" placeholder="Custome">
+            </button>
+          </div>
+        </div>
+        <div id="number-people" class="calc">
+          <div class="people-container">
+            <div class="people-label-box">
+              <label for="people-input">Number of People</label>
+            </div>  
+            <div class="input-wrapper flex borderNumberPeople">
+              <input type="number" id="people-input" class="input-value font-value">
+            </div>
+        </div>
+      </section>
+      <section id="results" class="flex">
+        <div class="amount-box">
+          <div class="person-box">
+            <p class="amount">Tip Amount</p>
+            <p class="person">/ person</p>
+          </div>
+          <div id="tip-amount" class="amount-value value">
+            $0.00
+          </div>
+        </div>
+          <div class="amount-box">
+            <div class="person-box">
+              <p class="amount">Total</p>
+              <p class="person">/ person</p>
+            </div>
+            <div id="total-amount" class="amount-value value">$0.00</div>
+          </div>
+        <div class="btn">
+          <button id="btn-reset">RESET</button>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
